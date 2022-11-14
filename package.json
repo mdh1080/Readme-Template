@@ -1,0 +1,13 @@
+{
+  "name": "challenge-9",
+  "version": "1.0.0",
+  "description": "## Description Its a readme template",
+  "main": "script.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
