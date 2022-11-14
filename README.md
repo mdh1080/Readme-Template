@@ -1,1 +1,1 @@
-{"title":"afsd","description":"afsd","Installation":"afds","usage":"fad","credits":"fas","license":"fasd"}
+[!Github License](https://img.shields.io/badge/license-MIT-blue.svg)
