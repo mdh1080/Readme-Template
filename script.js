@@ -34,25 +34,31 @@ inquirer
  
   .then((answers) => {
     console.log(answers),
-    fs.writeFileSync("README.md", JSON.stringify(answers), () =>
-    console.log("writeFileSync"),
-      `
-#Title
-${answers.title}
+    fs.writeFileSync("README.md", `
+
+
+
+# ${answers.title}
+
+* [Description](#description)
+
+* [License](#license)
 
 ## Description
 ${answers.description}
 
-##Installation
+## Installation
 ${answers.installation}
 
-##Usage 
+## Usage 
 ${answers.usage}
 
-##Credits
-${answers.credits}
+## Credits
+ ${answers.credits}
 
-##License
-${answers.license}
-`)
+## License
+[![GitHub License](https://img.shields.io/badge/license-${answers.license}-blue.svg)](https://github.com/mdh1080/challenge-9)
+
+`
+      )
   })
