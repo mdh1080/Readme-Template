@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 
 
@@ -26,6 +25,3 @@ wefr
 ## License
 lic
 
-=======
-# challenge-9
->>>>>>> bff07c95971e8a28394f211afae7c99a53532e01
