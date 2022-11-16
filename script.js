@@ -29,7 +29,7 @@ inquirer
     { type: "list",
       name: "license",
       message: "What is the type of the license?",
-      choices: ["Apache", "GNU General", "Public License", "MIT License", "Other"],
+      choices: ["Apache", "GNU", "Public", "MIT", "Mozilla"],
     },
     { type: "input",
       name: "features",
@@ -50,13 +50,12 @@ inquirer
     { type: "input",
       name: "email",
       message: "What is your email address?",
-    },
+    }
 
   ])
  
   .then((answers) => {
     console.log(answers),
-    (err) => err ? console.error(err) : console.log('Success!') 
     fs.writeFileSync("README.md", `
 
 # ${answers.title}  
@@ -76,6 +75,14 @@ ${answers.description}
 * [Credits](#usage)
 
 * [License](#license)
+
+* [Features](#features)
+
+* [Contributing](#contributing)
+
+* [Tests](#tests)
+
+* [Questions](#questions)
 
 ## Installation
 ${answers.installation}
@@ -102,5 +109,6 @@ ${answers.tests}
 ### GitHub username: ${answers.username}
 ### GitHub Profile: github.com/${answers.username}
 I can be contacted by email at: ${answers.email} if you have any questions. `)
+
 
   } );
