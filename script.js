@@ -107,7 +107,7 @@ ${answers.tests}
 
 ## Questions
 ### GitHub username: ${answers.username}
-### GitHub Profile: github.com/${answers.username}
+### GitHub Profile: https://github.com/${answers.username}
 I can be contacted by email at: ${answers.email} if you have any questions. `)
 
 
